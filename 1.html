@@ -1,116 +1,68 @@
 <!doctype html>
 <html>
-
 <head>
-  <<title>interesting</title>
+  <title>WEB - CSS</title>
   <meta charset="utf-8">
-  <style >
-  img {
-  border: 4px solid white
-
-}
-  body {background-color: green;}
-
-  #active{
-     color:red;
+  <style>
+    body{
+      margin:0;
     }
-
-  .saw{
-    color: red;}
-  a{
-    color:black;
-    text-decoration: none;
-  }
-
-  h1{
-    font-size:45px;
-     text-align: center;
-     border-bottom: 3px solid red;
-     margin: 0;
-
-  }
-  ol{
-    border-right: 3px solid red;
-    width: 150px;
-    margin: 0;
-    padding: 20px
-  }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-style: italic;
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: inline-grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+    /*screen width <800px*/
+    @media and (max-width:800px){
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+    }
   </style>
 </head>
-
 <body>
-  <h1><a href="index.html"> acceleration<a></h1>
-  <ol>
-    <li><a href="1.html"class="saw"> physics </a> </li>
-    <li><a href="2.html"class="saw" id="active"> velocity </a></li>
-    <li><a href="3.html"class="saw"> formula </a></li>
-  </ol>
-
-  <!--
-  <h1><a href="index.html"> <font color =" green">acceleration</font><a></h1>
-  <ol>
- style="color:red;text-decoration:underline"
-
-
-    <li><a href="1.html"> <font color =" green">physics<a> </font></li>
-    <li><a href="2.html"> <font color =" green">velocity<a></font></li>
-    <li><a href="3.html"> <font color =" green">formula<a> </font></li>
-  </ol>
--->
-  <h2>physics</h2>
-  <p>
-<iframe width="400" height="300" src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-    <p>When the <a href="https://en.wikipedia.org/wiki/Velocity" target="_blank" title="specification of vel">velocity</a> of an object changes it is said to be accelerating. Acceleration
-     is the rate of change of velocity with time.
-    In everyday English, the word acceleration is often used to describe a state of inc
-    reasing speed. <strong>For many <u> Americans</u>, their </strong>only experience with acceleration comes from car ads.
-    When a commercial shouts "zero to sixty in six point seven seconds" what they're s
-    aying here is that this particular car takes 6.7 s to reach a
-    speed of 60 mph starting from a complete stop. This example illustrates acceleratio
-    n as it is commonly understood,</p>
-    <img src="coding.jpg" >
-  <p style = "margin-top : 45px;">
-  but acceleration in physics is much more than just increasing speed.
-  Any change in the velocity of an object results in an acceleration: increasing spee
-  d (what people usually mean when they say acceleration), decreas
-  ing speed (also called deceleration or retardation), or changing direction (calle
-  d centripetal acceleration). Yes, that's right,
-  a change in the direction of motion results in an acceleration even if the moving
-  object neither sped up nor slowed down. That's because accel
-  eration depends on the change in velocity and velocity is a vector quantity — one
-  with both magnitude and direction. Thus, a falling apple accelerates,
-  a car stopping at a traffic light accelerates, and an orbiting planet acceler
-  ates. Acceleration occurs anytime an object's speed increases or
-   decreases, or it changes direction.</p>
-   <p>
-     <div id="disqus_thread"></div>
-     <script>
-
-     /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-     /*
-     var disqus_config = function () {
-     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-     };
-     */
-     (function() { // DON'T EDIT BELOW THIS LINE
-     var d = document, s = d.createElement('script');
-     s.src = 'https://web1-010101.disqus.com/embed.js';
-     s.setAttribute('data-timestamp', +new Date());
-     (d.head || d.body).appendChild(s);
-     })();
-     </script>
-     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
-
-
-   </p>
-</body>
-
-</HTML>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+        <h2>CSS</h2>
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+        </p>
+      </div>
+  </div>
+  </body>
+  </html>

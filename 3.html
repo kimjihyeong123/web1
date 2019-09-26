@@ -9,7 +9,7 @@
   <style >
     img {
       border: 4px solid gray;
-      margin: 40px;
+      transform: translateX(200px);
     }
 
     body {
@@ -55,15 +55,29 @@
   .lastlink{
     margin: 10px;
   }
-  .formula{
-    display: grid;
-    justify-content: center;
-  }
   .htag{
     font-style: oblique;
     font-family: fantasy;
   }
+  .formula{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 10px 0px 10px;
+  }
+  table{
+    width: 600px;
+    border-collapse: collapse;
 
+  }
+  td, th{
+    border: 4px solid gray;
+    text-align: center;
+
+  }
+  th{
+    background-color: yellow;
+  }
 
   </style>
 </head>
@@ -92,9 +106,46 @@
             </p>
     </div>
   </div>
+
       <div class="formula">
         <img  src="coding(formula).jpg" width="232.98" height="232.98">
-      </div>
+        <div>
+          <table>
+            <tr>
+              <th>day</th>
+              <th>time</th>
+              <th>fee</th>
+            </tr>
+            <tr>
+              <td>월</td>
+              <td>2pm~6pm</td>
+              <td>100$</td>
+            </tr>
+            <tr>
+              <td>화</td>
+              <td>2pm~6pm</td>
+              <td>100$</td>
+          </tr>
+          <tr>
+              <td>수</td>
+              <td>2pm~6pm</td>
+              <td>100$</td>
+          </tr>
+          <tr>
+              <td>목</td>
+              <td>2pm~6pm</td>
+              <td>100$</td>
+          </tr>
+          <tr>
+              <td>금</td>
+              <td>2pm~6pm</td>
+              <td>100$</td>
+          </tr>
+            </table>
+
+        </div>
+    </div>
+
 
 
   <p class ="lastp" style = "margin-top : 45px;">

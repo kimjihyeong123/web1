@@ -2,19 +2,68 @@
 <html>
 
 <head>
-  <<title>interesting</title>
+  <title>interesting</title>
   <meta charset="utf-8">
-</head>
 
+  <style>
+  a {
+    color:black;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+
+  ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+    font-style: oblique;
+    font-family: fantasy;
+  }
+
+  .wraper{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    border-bottom: 1px solid gray;
+  }
+  .wraper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+  .vel{
+    border : 1px solid blue;
+    padding: 10px;
+  }
+  .videovel{
+    border : 1px solid blue;
+    padding: 10px;
+    transform: translateX(100px);
+  }
+  .lastp{
+    border : 1px solid gray;
+    margin-top:45px;
+  }
+  </style>
+</head>
 <body>
-  <h1><a href="index.html"> acceleration<a></h1>
-  <ol>
-    <li><a href="1.html"> physics<a> </li>
-    <li><a href="2.html"> velocity<a></li>
-    <li><a href="3.html"> formula<a> </li>
-  </ol>
-  <h2>velocity</h2>
-      <p>The velocity of an object is the rate of change of its position with respect to a frame of
+  <h1><a href= "index.html"> acceleration</a></h1>
+    <div class = "wraper">
+      <ol>
+        <li><a href="1.html"> physics </a></li>
+        <li><a href="2.html"> velocity</a></li>
+        <li><a href="3.html"> formula </a></li>
+      </ol>
+        <div>
+        <h2>velocity</h2>
+        <p> The velocity of an object is the rate of change of its position with respect to a frame of
         reference, and is a <a href="https://en.wikipedia.org/wiki/Function_key" target="_blank" title="function defined by wikipedia">function</a> of
         time. Velocity is equivalent to  a specification of an object's speed and direction of motion (e.g. 60 km/h to the north).
         Velocity is a fundamental
@@ -25,15 +74,30 @@
         (metric system) as metres per second (m/s) or as the SI base unit of (m⋅s−1). For example,
         "5 metres per second" is a scalar, whereas "5 metres per second east" is a vector. If there
         is a change in speed, direction or both, then the object has a changing velocity and is said
-        to be undergoing an acceleration.
-    <img src="coding(velocity).jpg" > </p>
-  <p style = "margin-top : 45px;">
+        to be undergoing an acceleration.</p>
+        </div>
+      </div>
+
+
+
+      <div class="wraper2">
+          <div class="video">
+            <iframe class = "videovel"width="400" height="300" src="https://www.youtube.com/embed/apewLkLAR-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div>
+            <img class ="vel" src="coding(velocity).jpg" width ="232.98" height="232.98" alt = "computer hope">
+          </div>
+       </div>
+
+  <p class = "lastp" style = "margin-top : 45px;" align = center;  >
     <strong>To have a <u>constant velocity</u></strong>, an object must have a constant speed in a constant direction.
      Constant direction constrains the object to motion in a straight path thus, a constant velocity
       means motion in a straight line at a constant speed.
   For example, a car moving at a constant 20 kilometres per hour in a circular path has a constant speed
    but does not have a constant velocity because its direction changes. Hence, the car is considered to be undergoing an acceleration.
  </p>
+
+
 </body>
 
 </HTML>

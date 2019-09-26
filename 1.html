@@ -22,9 +22,10 @@
   h1 {
     font-size:45px;
     text-align: center;
-    border-bottom:1px solid gray;
     margin:0;
     padding:20px;
+    font-style: italic;
+    font-family: fantasy;
   }
 
   ol {
@@ -39,21 +40,21 @@
   .wraper {
     display: grid;
     grid-template-columns: 150px 1fr;
-    border-bottom: 1px solid gray;
+    border : 1px solid gray;
     box-shadow: 5px 5px 5px 5px gray;
-    margin-left: 40px;
-    margin: 0px 10px 0px 10px;
+    margin: 0 10px 0 10px;
   }
 
   .wraper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px;
+    padding: 10px;
+    margin: 50px;
   }
 
   iframe {
     border: 1px solid gray;
-    padding: 10px
+    padding: 20px;
   }
 
   .lastp {
@@ -61,23 +62,23 @@
     border: 1px solid gray;
   }
 
-  iframe {
-    display: block;
-    margin: auto;
+  .htag{
+    font-style: oblique;
+    font-family: fantasy;
   }
-  </style>
-</head>
+
+    </style>
+  </head>
 <body>
   <h1> <a href="index.html"> acceleration</a> </h1>
-
-  <div class = "wraper">
-    <ol>
-        <li><a href="1.html"> physics   </a> </li>
-        <li><a href="2.html"> velocity  </a> </li>
-        <li><a href="3.html">  formula  </a> </li>
-    </ol>
-     <div>
-    <h2>physics</h2>
+    <div class = "wraper">
+      <ol>
+          <li><a href="1.html"> physics   </a> </li>
+          <li><a href="2.html"> velocity  </a> </li>
+          <li><a href="3.html">  formula  </a> </li>
+      </ol>
+    <div>
+  <h2 class ="htag">physics</h2>
       <p>
       When the <a href="https://en.wikipedia.org/wiki/Velocity" target="_blank" title="specification of vel">velocity</a> of an object changes it is said to be accelerating. Acceleration
       is the rate of change of velocity with time.
@@ -90,7 +91,6 @@
       </p>
     </div>
   </div>
-
   <div class="wraper2">
       <div class="video">
         <iframe
@@ -126,5 +126,4 @@
      decreases, or it changes direction.
    </p>
   </body>
-
   </HTML>

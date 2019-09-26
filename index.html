@@ -15,9 +15,10 @@
   h1 {
     font-size:45px;
     text-align: center;
-    border-bottom:1px solid gray;
     margin:0;
     padding:20px;
+    font-style: italic;
+    font-family: fantasy;
   }
   ol{
     border-right:1px solid gray;
@@ -30,8 +31,9 @@
   .wraper{
     display: grid;
     grid-template-columns: 150px 1fr;
-    border: 1px solid gray;
-    margin-bottom: 25px;
+    border : 1px solid gray;
+    box-shadow: 5px 5px 5px 5px gray;
+    margin: 0 10px 0 10px;
   }
   .sss{
     font-size: 20px;
@@ -43,20 +45,27 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid gray;
+    padding: 10px;
   }
+  .htag{
+    font-style: oblique;
+    font-family: fantasy;
+  }
+
   </style>
 </head>
 <body>
     <h1> <a href="index.html"> acceleration</a> </h1>
-
-  <div class = "wraper">
+      <div class = "wraper">
         <ol>
-          <li><a href="1.html"> physics  </a></li>
-          <li><a href="2.html"> velocity </a></li>
-          <li><a href="3.html"> formula  </a></li>
+            <li><a href="1.html"> physics  </a></li>
+            <li><a href="2.html"> velocity </a></li>
+            <li><a href="3.html"> formula  </a></li>
         </ol>
-    <div>
-      <h2>physics</h2>
+      <div>
+      <h2 class ="htag">physics</h2>
         <p>When the <a href="https://en.wikipedia.org/wiki/Velocity" target="_blank" title="specification of vel">velocity</a> of an object changes it is said to be accelerating. Acceleration
         is the rate of change of velocity with time.
         In everyday English, the word acceleration is often used to describe a state of inc

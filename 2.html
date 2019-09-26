@@ -14,9 +14,10 @@
   h1 {
     font-size:45px;
     text-align: center;
-    border-bottom:1px solid gray;
     margin:0;
     padding:20px;
+    font-style: italic;
+    font-family: fantasy;
   }
 
   ol{
@@ -31,28 +32,40 @@
   .wraper{
     display: grid;
     grid-template-columns: 150px 1fr;
-    border-bottom: 1px solid gray;
+    border : 1px solid gray;
+    box-shadow: 5px 5px 5px 5px gray;
+    margin: 0 10px 0 10px;
   }
+
   .wraper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px;
+    padding: 20px 10px 0px 10px;
+    margin: 50px;
   }
+
   .vel{
-    border : 1px solid blue;
+    border : 1px solid black;
     padding: 10px;
   }
+
   .videovel{
-    border : 1px solid blue;
+    border : 1px solid black;
     padding: 10px;
-    transform: translateX(100px);
   }
+
   .lastp{
     border : 1px solid gray;
-    margin-top:45px;
+    margin: 45px 10px 0px 10px;
+    padding: 10px;
   }
-  </style>
-</head>
+
+  .htag{
+    font-style: oblique;
+    font-family: fantasy;
+  }
+    </style>
+  </head>
 <body>
   <h1><a href= "index.html"> acceleration</a></h1>
     <div class = "wraper">
@@ -62,7 +75,7 @@
         <li><a href="3.html"> formula </a></li>
       </ol>
         <div>
-        <h2>velocity</h2>
+        <h2 class ="htag">velocity</h2>
         <p> The velocity of an object is the rate of change of its position with respect to a frame of
         reference, and is a <a href="https://en.wikipedia.org/wiki/Function_key" target="_blank" title="function defined by wikipedia">function</a> of
         time. Velocity is equivalent to  a specification of an object's speed and direction of motion (e.g. 60 km/h to the north).
@@ -77,27 +90,20 @@
         to be undergoing an acceleration.</p>
         </div>
       </div>
-
-
-
-      <div class="wraper2">
+    <div class="wraper2">
           <div class="video">
             <iframe class = "videovel"width="400" height="300" src="https://www.youtube.com/embed/apewLkLAR-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div>
-            <img class ="vel" src="coding(velocity).jpg" width ="232.98" height="232.98" alt = "computer hope">
+            <img class ="vel" src="coding(velocity).jpg" width ="400" height="300" alt = "computer hope">
           </div>
        </div>
-
-  <p class = "lastp" style = "margin-top : 45px;" align = center;  >
+  <p class = "lastp">
     <strong>To have a <u>constant velocity</u></strong>, an object must have a constant speed in a constant direction.
      Constant direction constrains the object to motion in a straight path thus, a constant velocity
       means motion in a straight line at a constant speed.
   For example, a car moving at a constant 20 kilometres per hour in a circular path has a constant speed
    but does not have a constant velocity because its direction changes. Hence, the car is considered to be undergoing an acceleration.
  </p>
-
-
 </body>
-
 </HTML>

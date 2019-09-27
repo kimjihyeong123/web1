@@ -5,8 +5,12 @@
   <title>interesting</title>
   <meta charset="utf-8">
   <style>
+
+  .bigword{
+  }
   body{
     margin:0;
+    background-image: url(1.jpg);
   }
   a {
     color:black;
@@ -32,8 +36,9 @@
     display: grid;
     grid-template-columns: 150px 1fr;
     border : 1px solid gray;
-    box-shadow: 5px 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px 5px black;
     margin: 0 10px 0 10px;
+    background-color: gray;
   }
   .sss{
     font-size: 20px;
@@ -48,6 +53,7 @@
     margin-top: 40px;
     border: 1px solid gray;
     padding: 10px;
+    background-color: black;
   }
   .htag{
     font-style: oblique;
@@ -57,7 +63,7 @@
   </style>
 </head>
 <body>
-    <h1> <a href="index.html"> acceleration</a> </h1>
+    <h1 class = "bigword"> <a href="index.html"> acceleration</a> </h1>
       <div class = "wraper">
         <ol>
             <li><a href="1.html"> physics  </a></li>
@@ -79,6 +85,12 @@
         </p>
       </div>
   </div>
-    <img class = "sh" src="sh.jpg" alt="사랑해요 승현군." width="400" height="400">
+    <iframe class = "sh"
+    width="400" height="300"
+    src="https://www.youtube.com/embed/PLGJk79Aa2w"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
 </body>
 </HTML>

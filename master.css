@@ -34,14 +34,17 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  border: 1px solid gray;
-  padding: 10px;
-  background-color: black;
+  margin-top: 20px;
+  border: 5px solid gray;
+  padding: 20px;
+  background-color: white;
 }
 img {
   border: 1px solid gray;
   padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .lastp{
     padding: 10px;
@@ -58,4 +61,17 @@ table{
   width: 600px;
   border-collapse: collapse;
   background-color: white;
+}
+.wraper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 10px 0px 10px;
+  margin: 10px;
+}
+td, th{
+  border: 4px solid gray;
+  text-align: center;
+}
+th{
+  background-color: yellow;
 }
